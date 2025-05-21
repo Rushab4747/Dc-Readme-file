@@ -60,11 +60,15 @@ To secure your Azure Function App and enable outbound traffic routing through a 
 5. Choose the **VNet** you have already created and confirm the configuration.
 6. Click **Save** to apply the changes.
 
+![Step 1 - Open Function App](functionapp4.png)
+
+![Step 1 - Open Function App](functionapp5.png)
+
 
 
 ---
 
-**Note:**  
+Note:  
 - The VNet must exist in the same region as your Function App.
 - If the VNet has no subnet available for delegation, you may need to create a subnet first.
 
