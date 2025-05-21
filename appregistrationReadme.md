@@ -62,7 +62,7 @@ Register an application (backend-app) in Azure AD to represent the protected API
 
 9.Give scope name and for consent select Admin & users.
 
-[![Step 6](./appregistration6.png)](./appregistration6.png)
+[![Step 6](./appregirstration6.png)](./appregirstration6.png)
 [![Step 7](./appregistration7.png)](./appregistration7.png)
 
 10. Under the Manage section of the side menu, select Manifest and change the value for "accessTokenAcceptedVersion" from Null to 2 and save it.
