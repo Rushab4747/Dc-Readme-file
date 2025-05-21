@@ -81,7 +81,7 @@ Register client application that calls the API as an application in Azure AD.
 · Select Add.
 · Note: When the secret is created, note the key value for use in a subsequent step (Note: you can't see/copy this value once you move away from this page, but you can create New Client Secret as needed).
 
-[![Step 10](./appregistration10.png)](./appregistration10.png)
+[![Step 10](./appregirstration10.png)](./appregirstration10.png)
 
 3. Under the Manage section of the side menu, select Authentication. Add Callbcak URI for Postman https://oauth.pstmn.io/v1/browser-callback
  
