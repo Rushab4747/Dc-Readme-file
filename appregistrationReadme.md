@@ -73,7 +73,7 @@ Step 2: Register another application in Azure AD to represent a client applicati
  
 Register client application that calls the API as an application in Azure AD. 
 1. Follow 1-6 steps from above and create client application.
-[![Step 9](./appregistration9.png)](./appregistration9.png)
+[![Step 9](./appregirstration9.png)](./appregirstration9.png)
 
 2. Under the Manage section of the side menu, select Certificates & secrets.
 · Under Client secrets, select New client secret.
