@@ -28,13 +28,11 @@ You must have already:
 1. Open the newly created file share.
 2. Click Upload, select your `dab-config.json` and any other required files.
 3. Click Upload.
-
 [![Step 3](./Containerconfig3.png)](./Containerconfig3.png)
 
 ### Step 4: Retrieve Access Keys
 1. In the same Storage Account, go to Security + networking > Access keys.
 2. Note down the Storage account name and one key value — these are needed for mounting.
-
 [![Step 4](./Containerconfig4.png)](./Containerconfig4.png)
 ---
 
