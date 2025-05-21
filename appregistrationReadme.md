@@ -140,6 +140,7 @@ Assign users to client application, “PenTestUser1” so that only assigned use
 
 How Access to requested APIs are given?
 When a user requests access to specific APIs within Azure API Management (APIM), we ensure they only have access to the APIs they need. This process involves adding the requested APIs to a Product in APIM and enabling a Subscription Key on Product for those APIs. Here's how the process works:
+
 	1. Request and Identification:
 			o A delegated user(individual user) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such as just three specific APIs. 
 			o If the request is for Application Access (Integration Purpose where MFA not required) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such as just three specific APIs.
