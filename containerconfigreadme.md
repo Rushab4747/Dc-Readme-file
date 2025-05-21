@@ -18,19 +18,23 @@ You must have already:
 ### Step 2: Create a File Share
 1. Click on + File share.
 [![Step 1](./Containerconfig1.png)](./Containerconfig1.png)
-2. Configure the name, quota, and tier as needed.
+
+3. Configure the name, quota, and tier as needed.
 [![Step 2](./Containerconfig2.png)](./Containerconfig2.png)
-3. Click Create.
+
+4. Click Create.
 
 ### Step 3: Upload Files
 1. Open the newly created file share.
 2. Click Upload, select your `dab-config.json` and any other required files.
 3. Click Upload.
+
 [![Step 3](./Containerconfig3.png)](./Containerconfig3.png)
 
 ### Step 4: Retrieve Access Keys
 1. In the same Storage Account, go to Security + networking > Access keys.
 2. Note down the Storage account name and one key value — these are needed for mounting.
+
 [![Step 4](./Containerconfig4.png)](./Containerconfig4.png)
 ---
 
@@ -47,7 +51,9 @@ You must have already:
    - Storage account name
    - Storage account key
 3. Save the configuration.
+
 [![Step 5](./Containerconfig5.png)](./Containerconfig5.png)
+
 [![Step 6](./Containerconfig6.png)](./Containerconfig6.png
 ---
 
@@ -64,6 +70,7 @@ You must have already:
 3. Specify:
    - Volume name
    - Azure Files share (linked earlier)
+
 [![Step 7](./Containerconfig7.png)](./Containerconfig7.png)
 
 
@@ -74,6 +81,7 @@ You must have already:
    - One for the `dab-config.json`
    - Another if needed for additional files
 4. Save your changes.
+
 [![Step 8](./Containerconfig8.png)](./Containerconfig8.png)
 
 [![Step 9](./Containerconfig9.png)](./Containerconfig9.png)
@@ -93,6 +101,7 @@ Create a secret for the SQL connection string in Azure Key Vault.
 ### Step 2: Add Secret Reference in Container App
 1. Go to your Container App.
 2. In the left menu, search for Security, and select Secrets.
+
 [![Step 11](./Containerconfig11.png)](./Containerconfig11.png)
 
 ### Step 3: Add Key Vault Reference
@@ -102,10 +111,11 @@ Create a secret for the SQL connection string in Azure Key Vault.
    - Type: Key Vault reference
    - Key Vault secret URL (copy from Key Vault)
 3. For Managed Identity, select System assigned.
+
 [![Step 12](./Containerconfig12.png)](./Containerconfig12.png)
 ---
 
 ##  Reference
 
 For additional details, refer to [Microsoft’s official documentation](https://learn.microsoft.com/en-us/azure/container-apps/)
-![image](https://github.com/user-attachments/assets/a34bf667-ee3b-4e07-87c4-854b9bd10149)
+
