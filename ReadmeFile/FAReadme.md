@@ -19,7 +19,7 @@ Navigate to your Azure portal and go to the Function App you have deployed. In t
 ### Step 2: Add a New Environment Variable
 Click the `+ Add` button to begin adding a new environment variable.
 
-[![Step 2 - Add Environment Variable](image/functionapp2.png)](image/functionapp2.png)
+![Step 1 - Open Function App](functionapp2.png)
 
 ---
 
@@ -30,7 +30,7 @@ In the dialog that appears:
 - Value: Provide the corresponding value.
 Click OK and Save after adding each variable.
 
-[![Step 3 - Provide Name and Value](image/functionapp3.png)](image/functionapp3.png)
+![Step 1 - Open Function App](functionapp3.png)
 
 ---
 
