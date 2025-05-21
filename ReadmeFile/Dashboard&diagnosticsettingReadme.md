@@ -20,7 +20,7 @@ This guide outlines the essential configuration steps to ensure your Azure dashb
    - Enable all relevant logs and metrics
 6. Click  Save.
 
-Image -1 
+![Dashboard Step 1](Dashboard1.png)
 
 
 >  Repeat the same for any other Azure services involved (e.g., Function App, Key Vault, etc.).
