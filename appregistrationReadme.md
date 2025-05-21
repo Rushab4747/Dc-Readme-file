@@ -36,11 +36,11 @@ OAuth2 with Azure AD is used to secure APIs published in Azure API Management (A
 
 API Security Architecture
 
-Image-1 
+[![Step 1](./appregistration1.png)](./appregistration1.png)
 
 Workflow Overview: Accessing APIs for Target Requestors
 
-Image-2 
+[![Step 2](./appregistration2.png)](./appregistration2.png)
 
 Step 1: Register an application in Azure AD to represent the API
 Register an application (backend-app) in Azure AD to represent the protected API resource.​
@@ -52,28 +52,28 @@ Register an application (backend-app) in Azure AD to represent the protected API
 	 5. Select Register to create the application.
 	 6. On the app Overview page, find the Application (client) ID value and record it for later.
 
-image-3 
-image-4 
+[![Step 3](./appregistration3.png)](./appregistration3.png)
+[![Step 4](./appregistration4.png)](./appregistration4.png)
 
 7. Under the Manage section of the side menu, select Expose an API and set the Application ID URI with the default value
 8. Click on Add Scope
 
-Image-5 
+[![Step 5](./appregistration5.png)](./appregistration5.png)
 
 9.Give scope name and for consent select Admin & users.
 
-image-6 
-Image-7 
+[![Step 6](./appregistration6.png)](./appregistration6.png)
+[![Step 7](./appregistration7.png)](./appregistration7.png)
 
 10. Under the Manage section of the side menu, select Manifest and change the value for "accessTokenAcceptedVersion" from Null to 2 and save it.
 
-image-8 
+[![Step 8](./appregistration8.png)](./appregistration8.png)
 
 Step 2: Register another application in Azure AD to represent a client application.
  
 Register client application that calls the API as an application in Azure AD. 
 1. Follow 1-6 steps from above and create client application.
-Image-9 
+[![Step 9](./appregistration9.png)](./appregistration9.png)
 
 2. Under the Manage section of the side menu, select Certificates & secrets.
 · Under Client secrets, select New client secret.
@@ -81,17 +81,15 @@ Image-9
 · Select Add.
 · Note: When the secret is created, note the key value for use in a subsequent step (Note: you can't see/copy this value once you move away from this page, but you can create New Client Secret as needed).
 
-image-10 
+[![Step 10](./appregistration10.png)](./appregistration10.png)
 
 3. Under the Manage section of the side menu, select Authentication. Add Callbcak URI for Postman https://oauth.pstmn.io/v1/browser-callback
  
 4. Select Add a platform -> web -> Redirect URIs and enter “ https://oauth.pstmn.io/v1/browser-callback”4.Under the Manage section of the side menu, select API Permission -> Add a permission -> My APIs-> select your Backend Application (in our case it is Middleware-Application-API) -> delegated Permission -> select the scope which you created,”PenTestScope” and add permission
 
-Image-11 
-Image -12 
-
-image-13 
-
+[![Step 11](./appregistration11.png)](./appregistration11.png)
+[![Step 12](./appregistration12.png)](./appregistration12.png)
+[![Step 13](./appregistration13.png)](./appregistration13.png)
 
 Note: 
 Delegated User: For individual user access we will select Delegated Permissions, where your application needs to access API as the signed-in user
@@ -103,7 +101,7 @@ Step 3: Add Client ID of Client Application to Backend Application
 
 2. Under “Authorized client applications”. Add client ID of client Application, PenTestUser1
 
-image-14 
+[![Step 14](./appregistration14.png)](./appregistration14.png)
 
 Step 4: Configure a JWT validation policy to pre-authorize requests.
 1.Add the following Validate JWT policy to <inbound> policy section of your API in inbound section. 
@@ -126,18 +124,18 @@ Step 4: Configure a JWT validation policy to pre-authorize requests.
         </validate-jwt>
     </inbound>
 
-Image-15 
+[![Step 15](./appregistration15.png)](./appregistration15.png)
 Step 5: Enable Assign users in Client Application 
 
 Assign users to client application, “PenTestUser1” so that only assigned user have the access to use the APIs.
 1.Go to Enterprise Application -> search your Client Application “PenTestUser1”
 2.Under the Manage section of the side menu, select “Properties” and enable  “Assignment required”
 
-image-16
+[![Step 16](./appregistration16.png)](./appregistration16.png)
 
 
 3. Now go to Users and Groups, and users for which you want to provide access. Here you can revoke access by removing users at a later stage as per requirements.
-Image-17 
+[![Step 17](./appregistration17.png)](./appregistration17.png)
 
 
 How Access to requested APIs are given?
@@ -156,11 +154,11 @@ When a user requests access to specific APIs within Azure API Management (APIM),
 	6. Access Control Verification:
 			o If the API call does not include the correct Subscription Key, an error message such as "401 Unauthorized-missing susbcription" is returned.
 
-Image-18 
+[![Step 18](./appregistration18.png)](./appregistration18.png)
 
 o If an invalid Subscription Key or a key for a different Product is used, an "401 Unauthorized -Invalid Subscription Key" error is returned.
 
-image-19
+[![Step 19](./appregistration19.png)](./appregistration19.png)
 
 7. For Application Access:
 	o The user configures Secret ID, Client ID, Scope & api-version as header in the integration. This is Application access hence user sign in (MFA) is not required.
