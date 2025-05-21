@@ -13,7 +13,6 @@ Navigate to your Azure portal and go to the Function App you have deployed. In t
 
 [![Step 1 - Open Function App](images/functionapp1.png)](images/functionapp1.png)
 
-
 ---
 
 ### Step 2: Add a New Environment Variable
