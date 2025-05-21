@@ -88,8 +88,8 @@ Register client application that calls the API as an application in Azure AD.
 4. Select Add a platform -> web -> Redirect URIs and enter “ https://oauth.pstmn.io/v1/browser-callback”4.Under the Manage section of the side menu, select API Permission -> Add a permission -> My APIs-> select your Backend Application (in our case it is Middleware-Application-API) -> delegated Permission -> select the scope which you created,”PenTestScope” and add permission
 
 [![Step 11](./appregistration11.png)](./appregistration11.png)
-[![Step 12](./appregistration12.png)](./appregistration12.png)
-[![Step 13](./appregistration13.png)](./appregistration13.png)
+[![Step 12](./appregirstration12.png)](./appregirstration12.png)
+[![Step 13](./appregirstration13.png)](./appregirstration13.png)
 
 Note: 
 Delegated User: For individual user access we will select Delegated Permissions, where your application needs to access API as the signed-in user
@@ -135,25 +135,31 @@ Assign users to client application, “PenTestUser1” so that only assigned use
 
 
 3. Now go to Users and Groups, and users for which you want to provide access. Here you can revoke access by removing users at a later stage as per requirements.
-[![Step 17](./appregistration17.png)](./appregistration17.png)
+[![Step 17](./appregirstration17.png)](./appregirstration17.png)
 
 
 How Access to requested APIs are given?
 When a user requests access to specific APIs within Azure API Management (APIM), we ensure they only have access to the APIs they need. This process involves adding the requested APIs to a Product in APIM and enabling a Subscription Key on Product for those APIs. Here's how the process works:
 
-	1. Request and Identification:
-			o A delegated user(individual user) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such as just three specific APIs. 
-			o If the request is for Application Access (Integration Purpose where MFA not required) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such as just three specific APIs.
-	2. API Selection and Product Creation:
-			o The requested APIs are grouped into a Product in APIM. This product is configured to include only the APIs that the user has requested access to.
-	3. Subscription Key Activation:
-			o A Subscription Key is enabled for the Product. This key is essential for accessing the APIs within the Product.
-	4. OAuth2 Authentication (for delegated user):
-			o The user uses OAuth2 for authentication. They generate a bearer token using the Secret ID, Client ID, Auth URL, and Token URL. This bearer token proves their identity and grants them access permissions.
-	5. API Call Execution (for Delegated user via Postman or any tool):
-			o When making API calls (e.g., using Postman), the user must include the generated bearer token, the Subscription Key provided for the Product & api-version as header to make a API Call. The bearer token authenticates the user, while the Subscription Key authorizes access to the specific APIs.
-	6. Access Control Verification:
-			o If the API call does not include the correct Subscription Key, an error message such as "401 Unauthorized-missing susbcription" is returned.
+1. Request and Identification:
+o A delegated user(individual user) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such as just three specific APIs. 
+o If the request is for Application Access (Integration Purpose where MFA not required) from a target system, such as HR, requests access to certain APIs. This can be for all APIs or a subset, such 
+as just three specific APIs.
+
+2. API Selection and Product Creation:
+o The requested APIs are grouped into a Product in APIM. This product is configured to include only the APIs that the user has requested access to.
+	
+3. Subscription Key Activation:
+o A Subscription Key is enabled for the Product. This key is essential for accessing the APIs within the Product.
+	
+4. OAuth2 Authentication (for delegated user):
+o The user uses OAuth2 for authentication. They generate a bearer token using the Secret ID, Client ID, Auth URL, and Token URL. This bearer token proves their identity and grants them access permissions.
+	
+ 5. API Call Execution (for Delegated user via Postman or any tool):
+o When making API calls (e.g., using Postman), the user must include the generated bearer token, the Subscription Key provided for the Product & api-version as header to make a API Call. The bearer token authenticates the user, while the Subscription Key authorizes access to the specific APIs.
+	
+6. Access Control Verification:
+o If the API call does not include the correct Subscription Key, an error message such as "401 Unauthorized-missing susbcription" is returned.
 
 [![Step 18](./appregistration18.png)](./appregistration18.png)
 
@@ -162,7 +168,7 @@ o If an invalid Subscription Key or a key for a different Product is used, an "4
 [![Step 19](./appregistration19.png)](./appregistration19.png)
 
 7. For Application Access:
-	o The user configures Secret ID, Client ID, Scope & api-version as header in the integration. This is Application access hence user sign in (MFA) is not required.
+o The user configures Secret ID, Client ID, Scope & api-version as header in the integration. This is Application access hence user sign in (MFA) is not required.
  
 This meticulous process ensures that the user can only access the APIs they have been explicitly granted access to. The combination of OAuth2 authentication and Subscription Key authorization effectively secures the API access, providing granular control over who can access which APIs.
 
