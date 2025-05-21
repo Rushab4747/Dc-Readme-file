@@ -45,3 +45,26 @@ storage_account = os.environ['STORAGE_ACCOUNT_KEY']
 Things to Remember
 All environment variables must exactly match the names used in the code.
 Secrets should never be hardcoded in your code—they should always be placed in environment variables or secured with Azure Key Vault.
+
+
+##  Configure VNet Integration in Azure Function App
+
+To secure your Azure Function App and enable outbound traffic routing through a specific Virtual Network (VNet), follow these steps:
+
+###  Steps
+
+1. Navigate to your **Function App** in the [Azure Portal](https://portal.azure.com/).
+2. In the **Settings** section of the left-hand menu, click on **Networking**.
+3. Under the **Outbound Traffic** section, select **VNet Integration**.
+4. Click on the **+ Add VNet** or select an existing **VNet** from the list.
+5. Choose the **VNet** you have already created and confirm the configuration.
+6. Click **Save** to apply the changes.
+
+
+
+---
+
+**Note:**  
+- The VNet must exist in the same region as your Function App.
+- If the VNet has no subnet available for delegation, you may need to create a subnet first.
+
