@@ -2,7 +2,7 @@ Post the deployment of the azure services there are few manual configruartion st
 
 1. Post the deployment of Function app there are few configruation step for the vnet and environment variable setup this below readme file will help to do it 
 
- [EventGridReadme.md](./EventGridReadme.md) | Guide to configuring Event Grid System Topic and integrating with a Webhook endpoint |
+ | Configure Function App Environment Variables | [FAReadme.md](./ReadmeFile/FAReadme.md) |
 
 2. Post the deployment of container and storage account there are few configuration step required for set up the config file in the storage account , volumne mount and some container required configuration the below readme file will help to do it 
 
