@@ -38,7 +38,8 @@ This guide outlines the essential configuration steps to ensure your Azure dashb
 #### Steps:
 
 1. Go to Cost Management + Billing > Cost Analysis.
-Image -2 
+
+![Dashboard Step 2](Dashboard2.png)
 
 2. In the Period dropdown, select Last 6 Months.
 3. Apply optional filters such as:
@@ -51,8 +52,10 @@ Image -2
 5. Click Save and name it:  
    `DataCatalystMonthlySpendByResourceSplit`
 
-image -3 
-image -4 
+![Dashboard Step 3](Dashboard3.png)
+
+![Dashboard Step 4](Dashboard4.png)
+
 
 ---
 
@@ -69,7 +72,8 @@ image -4
 4. Save this view with the name:  
    `DataCatalystDailySpendLastMonth`
 
-image 5 
-Image 6 
+![Dashboard Step 5](Dashboard5.png)
+
+![Dashboard Step 6](Dashboard6.png)
 
 ---
