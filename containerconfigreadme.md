@@ -20,6 +20,7 @@ You must have already:
 [![Step 1](./Containerconfig1.png)](./Containerconfig1.png)
 
 3. Configure the name, quota, and tier as needed.
+
 [![Step 2](./Containerconfig2.png)](./Containerconfig2.png)
 
 4. Click Create.
@@ -28,6 +29,7 @@ You must have already:
 1. Open the newly created file share.
 2. Click Upload, select your `dab-config.json` and any other required files.
 3. Click Upload.
+   
 [![Step 3](./Containerconfig3.png)](./Containerconfig3.png)
 
 ### Step 4: Retrieve Access Keys
@@ -52,7 +54,9 @@ You must have already:
 
 [![Step 5](./Containerconfig5.png)](./Containerconfig5.png)
 
-[![Step 6](./Containerconfig6.png)](./Containerconfig6.png
+[![Step 6](./Containerconfig6.png)](./Containerconfig6.png)
+
+
 ---
 
 ##  Part 3: Create Volume and Mount It to Container
