@@ -73,4 +73,3 @@ image 5
 Image 6 
 
 ---
-![image](https://github.com/user-attachments/assets/6d6b0155-4160-4267-8dbb-48e70fef9690)
