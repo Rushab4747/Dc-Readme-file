@@ -12,7 +12,7 @@ Enable automatic event-driven workflows by subscribing your storage account to e
 Open the desired Storage Account in the [Azure Portal](https://portal.azure.com/).
 In the left-hand search bar within the storage account, type "Event".
 
-[![Step 1 - Create Event Grid Topic](./Eventgrid1.png)](./Eventgrid1.png) 
+[![Step 1 - Create Event Grid Topic](./Eventgrid1.png)](./Eventgrid1.png)
 
 ---
 
