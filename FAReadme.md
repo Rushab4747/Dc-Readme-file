@@ -12,7 +12,6 @@ If your function code uses environment variables—like connection strings, API 
 Navigate to your Azure portal and go to the Function App you have deployed. In the left-hand panel, use the search bar and search for “Environment Variables”.
 
 [![Step 1 - Open Function App](functionapp1.png)](functionapp1.png)
-
 ---
 
 ### Step 2: Add a New Environment Variable
