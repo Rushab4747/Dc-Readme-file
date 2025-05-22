@@ -44,6 +44,6 @@ These tasks ensure the dashboard is populated correctly.
 
 ---
 
-Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. ✅
+Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
 
