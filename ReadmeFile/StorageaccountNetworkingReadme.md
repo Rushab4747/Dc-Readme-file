@@ -25,6 +25,8 @@ This guide explains how to configure VNet integration and  IP restrictions for y
 1. In the left-hand panel, click Networking.
 2. This section manages access control for your Storage Account.
 
+![VNet Step 1](vnetsa1.png)
+
 ---
 
 ### ✅ Step 3: Configure VNet Access
@@ -36,6 +38,8 @@ This guide explains how to configure VNet integration and  IP restrictions for y
    - Virtual Network
    - Subnet you previously created
 4. Click Add.
+
+![VNet Step 2](vnetsa2.png)
 
 ---
 
