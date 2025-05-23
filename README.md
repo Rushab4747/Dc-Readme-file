@@ -44,6 +44,13 @@ These tasks ensure the dashboard is populated correctly.
 
 ---
 
+##  Subnet Configuration (Post VNet Deployment)
+
+After deploying the **Virtual Network (VNet), you need to create subnets that will be associated with services like Storage Account, Function App, and others during their configuration.
+
+📄 Refer to: [Subnet Configuration Guide](./ReadmeFile/subnetreadme.md)
+
+
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
 
