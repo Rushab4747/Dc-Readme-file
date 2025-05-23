@@ -44,12 +44,24 @@ These tasks ensure the dashboard is populated correctly.
 
 ---
 
-##  Subnet Configuration (Post VNet Deployment)
+### 6.  Subnet Configuration (Post VNet Deployment)
 
 After deploying the **Virtual Network (VNet), you need to create subnets that will be associated with services like Storage Account, Function App, and others during their configuration.
 
 📄 Refer to: [Subnet Configuration Guide](./ReadmeFile/subnetreadme.md)
 
+---
+
+### 7. Storage Account Networking Configuration
+
+After deploying the Virtual Network (VNet) and Storage Account, you must manually configure networking settings to:
+
+- Restrict access using the VNet and subnet
+- Whitelist specific IP addresses (optional)
+
+📄 Refer to: [StorageAccountNetworkingReadme.md](./ReadmeFile/StorageAccountNetworkingReadme.md)
+
+---
 
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
