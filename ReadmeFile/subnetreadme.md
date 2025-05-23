@@ -23,6 +23,8 @@ Go to: [https://portal.azure.com](https://portal.azure.com)
 
 From the left-hand navigation menu or the search bar at the top, search for "Virtual networks" and click to open it.
 
+![Subnet Step 1](subnet1.png)
+
 
 ---
 
@@ -41,6 +43,8 @@ In the selected VNet’s Settings pane (left-side menu), click on Subnets.
 ### 5. Add a New Subnet
 
 Click on `+ Subnet` at the top to open the Add subnet panel.
+
+![Subnet Step 2](subnet2.png)
 
 ---
 
