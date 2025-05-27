@@ -63,6 +63,13 @@ After deploying the Virtual Network (VNet) and Storage Account, you must manuall
 
 ---
 
+### 8. Configure Alerts on Azure
+A Log Analytics Workspace is connected to Azure resources with diagnostic settings enabled and logs populated. An Action Group is set up to respond when alerts are triggered.
+You can refer to the below README file to configure the alert.
+
+[Alert Configuration Guide](ReadmeFile/alertreadme.md)
+
+
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
 
