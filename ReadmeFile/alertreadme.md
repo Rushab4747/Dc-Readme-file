@@ -15,21 +15,25 @@ Before creating alerts, ensure the following are in place:
 ### Step 1: Go to Azure Monitor
 1. Open [Azure Portal](https://portal.azure.com/).
 2. Search for and open Azure Monitor.
-Image 1 
+
+![Alert Step 1](alert1.png)
 
 ---
 
 ### Step 2: Navigate to Alert Rules
 - Go to Alerts > Alert rules.
 - Click + Create  to start setting up a new alert rule.
-Image 2 
+
+![Alert Step 2](alert2.png)
 
 ---
 
 ### Step 3: Define Alert Scope
 - Select the resource group or specific resource where you want to monitor (e.g., API Management).
-image 3 
-Image 4 
+
+![Alert Step 3](alert3.png)
+
+![Alert Step 4](alert4.png)
 
 ---
 
@@ -42,13 +46,14 @@ ApiManagementGatewayLogs
 | project _ResourceId, OperationId, ErrorMessage = LastErrorMessage
 Set additional thresholds and frequency as per your monitoring needs.
 
-Image 5 
-image 6 
+![Alert Step 5](alert5.png)
+
+![Alert Step 6](alert6.png)
 
 Step 5: Add Actions
 Assign the Action Group that will handle notifications (email, webhook, Logic App, etc.).
 
-Image 7 
+![Alert Step 7](alert7.png)
 
 This ensures alerts are delivered to the appropriate contacts.
 
