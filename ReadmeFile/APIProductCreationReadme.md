@@ -11,6 +11,7 @@ Step 1: Create Product in APIM
    - Display Name
    - Description: Include details of requested APIs.
 
+![Product Creation Step](./product1.png)
 
 Note: Follow your team’s naming conventions for consistency.
 
@@ -18,6 +19,8 @@ Note: Follow your team’s naming conventions for consistency.
 
 1. In the APIs section of the Product, click + Add API to Product.
 2. Select the required APIs to include.
+
+![Product Configuration Step](./product2.png)
 
 Versioning Guidelines:
 - Use v1 for user-based access.
