@@ -41,7 +41,7 @@ $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -
 Backup-AzApiManagement -ResourceGroupName $apiManagementResourceGroup -Name $apiManagementName `
   -StorageContext $storageContext -TargetContainerName $containerName -TargetBlobName $blobName
   
-Image-1
+![Backup Step](./Backupandrestore1.png)
   
   
 ## Restore Process
@@ -49,7 +49,7 @@ Image-1
 Step 1: Copy the Backup Blob
 Copy the .apimbackup file from source storage container to the target storage container (via portal or CLI).
 
-image-2 
+![Restore Step](./Backupandrestore2.png)
 
 Step 2: Define Target Variables
 
@@ -73,7 +73,7 @@ Restore-AzApiManagement -ResourceGroupName $apiManagementResourceGroup -Name $ap
   -StorageContext $storageContext -SourceContainerName $containerName -SourceBlobName $blobName
   
   
-Image-3 
+![Post-Restore](./Backupandrestore3.png) 
 
 Please Note -  Restoration may take 30–45 minutes depending on APIM size.
 
