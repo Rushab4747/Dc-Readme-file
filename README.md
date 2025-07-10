@@ -74,6 +74,14 @@ This document provides guidance on deploying Azure API Management (APIM) and cre
 
 [Product Setup Guide](ReadmeFile/APIProductCreationReadme.md)
 
+### 10 .APIM Migration via Backup & Restore
+
+This document outlines the process to migrate Azure API Management (APIM) instances using the backup and restore method. It should be used post-deployment of a new APIM instance when you need to replicate or recover APIs, policies, and configurations from a source environment to a target one.
+
+
+[APIM Backup & Restore Guide](ReadmeFile/APIMBackup&RestoreReadme.md)
+
+
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
 
