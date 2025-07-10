@@ -69,6 +69,10 @@ You can refer to the below README file to configure the alert.
 
 [Alert Configuration Guide](ReadmeFile/alertreadme.md)
 
+### 9. API Product Creation DOcumentation 
+This document provides guidance on deploying Azure API Management (APIM) and creating APIs within it, including how to configure and publish a product for the APIs
+
+[Product Setup Guide](ReadmeFile/APIProductCreationReadme.md)
 
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
