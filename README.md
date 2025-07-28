@@ -98,7 +98,21 @@ This document explains the Azure Role-Based Access Control (RBAC) model implemen
 [RBAC Model & Access Guide](ReadmeFile/Rbac%20readmefile.md)
 
 ---
+### 12. Backup and Disaster Recovery Strategy
 
+This document provides a detailed overview of the backup and disaster recovery (DR) practices used in the Middleware project to ensure service resilience, continuity, and protection of critical components.
+
+Key areas covered in the guide include:
+
+- Backup and restore processes for Azure API Management (APIM), SQL Databases, Function Apps, Logic Apps, and Azure Data Factory (ADF)
+- Use of ARM templates, Git repositories, and geo-redundant storage for cross-region failover
+- Continuous monitoring setup using Azure Monitor and Application Insights
+- Regional backup architecture using UK South (primary) and UK West (secondary)
+- Delete locks and RBAC-based protections to prevent unauthorized or accidental changes
+
+[Backup & DR Guide](ReadmeFile/10-backup-disaster-recovery.md)
+
+---
 
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
