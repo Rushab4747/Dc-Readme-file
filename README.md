@@ -87,6 +87,18 @@ This document outlines the process to migrate Azure API Management (APIM) instan
 
 ---
 
+### 11. RBAC Model and Access Strategy
+
+This document explains the Azure Role-Based Access Control (RBAC) model implemented in the middleware project, including:
+- Granular role assignments for secure access to Function Apps, Key Vaults, and APIM
+- Environment-specific access control (Dev, UAT, Prod)
+- Least privilege principle and compliance strategy
+- Examples of role definitions and scope hierarchies
+
+[RBAC Model & Access Guide](ReadmeFile/Rbac%20readmefile.md)
+
+---
+
 
 Make sure to follow each linked guide step-by-step to avoid runtime and visibility issues post-deployment. 
 
