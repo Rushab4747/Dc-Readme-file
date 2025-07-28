@@ -102,3 +102,20 @@ This means:
 In conclusion, the Azure RBAC model has been instrumental in creating a secure and well-organized access control structure within our middleware project. By utilizing RBAC, we've achieved a balance between providing our team members with the necessary access and maintaining a secure and compliant environment.
 
 The structured use of RBAC roles across subscriptions and resource groups ensures that access is granted with precision, minimizing potential risks. As our project progresses through different environments and stages, Azure RBAC will continue to be
+
+---
+
+## Example 
+
+## 🔐 RBAC Role Assignment Examples
+
+The table below summarizes key roles:
+
+| **Role Name**     | **Type**      | **Assigned Scope** | **Comments** |
+|------------------|---------------|--------------------|--------------|
+| **Owner**         | Built-in      | Resource Group     | Grants full administrative access to all resources, including role management. This role is typically restricted to ensure tighter access control. |
+| **Devops**        | CustomRole    | Resource Group     | Provides Contributor-level access with additional restrictions on policy assignment and role definition capabilities. |
+| **Devops_mpi**    | CustomRole    | Resource Group     | Provides DevOps-level access tailored for limited APIM operations, such as managing products but not modifying policies. |
+| **RBAC Admin**    | Built-in      | Subscription       | Manages role-based access across resources. This role does not include permissions for managing access via other mechanisms such as Azure Policies. Typically restricted for security governance. |
+| **Security Admin**| Built-in      | Resource Group     | Handles security configurations, role assignments, compliance monitoring, and alert management. This role is generally limited to authorized security personnel. |
+
