@@ -22,6 +22,8 @@ RBAC helps enforce compliance by adhering to the principle of least privilege. U
 ## RBAC Architecture Overview
 We can control access to resources using RBAC by creating Role Assignments, which control how permissions are enforced.
 
+![RBAC Diagram 1](./rbac1.png)
+
 ## Role Assignment
 A role assignmentis the process of attaching a role definition to a user, group, service principal, or managed identity at a particular scope for the purpose of granting access. Access is granted by creating a role assignment, and access is revoked by removing a role assignment.
 To create a role assignment, we need three elements:  
@@ -39,6 +41,8 @@ This represents a user, group, service principal, or managed identity that is re
 - Service Principalsare used for apps that need specific access and control.
 - Managed Identitiesare used when we want Azure to handle login details and enable communication between Azure resources.
 
+![RBAC Diagram 2](./rbac2.png)
+
 ---
 
 ## 2. Role Definition (What)
@@ -49,7 +53,9 @@ Azure includes several built-in roles, such as:
 - Reader– Can view existing Azure resources.
 - User Access Administrator– Can manage user access to Azure resources.
 
-> If the built-in roles do not meet the specific needs of our requirement, we can create our own custom roles**.
+  ![RBAC Diagram 3](./rbac3.png)
+
+> If the built-in roles do not meet the specific needs of our requirement, we can create our own custom roles.
 
 ---
 
@@ -60,6 +66,8 @@ In Azure, scope can be defined at multiple levels:
 - Subscription
 - Resource Group
 - Resource
+ 
+  ![RBAC Diagram 4](./rbac4.png)
 
 Scopes are structured in a parent-child relationship.  
 > Granting access at a parent scope automatically grants access to all child scopes.
